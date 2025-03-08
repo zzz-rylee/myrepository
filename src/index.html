@@ -1,0 +1,375 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <style>
+    header {
+        background-image: url('images/joshua-sortino-m5P0c6ABWDs-unsplash.jpg');
+        background-size: cover; /* Ensures the image covers the entire page */
+        background-position: center; /* Centers the image */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+        color: white;
+        background-attachment: fixed;
+        height: 90vh;
+    }
+</style>
+</head>
+<body class="overflow-x-hidden">
+    <header>
+        <nav class="flex">
+        <div>
+            <img src="images/horizone logoooo.png" alt="" class="lg:h-20 w-50">
+        </div>
+        
+        <div class="lg:hidden md:relative left-[570px]  text-white fill-current size-8 mt-6">
+            <box-icon name='list-ul' id="hamburger-icon"></box-icon>
+        </div>
+
+        <ul class="hidden lg:block lg:flex mx-auto gap-6 lg:relative right-32 top-8 ">
+            <li><a href="" class="hover:bg-black">Hotel</a></li>
+            <li><a href="">Flight</a></li>
+            <li><a href="">Train</a></li>
+            <li><a href="">Travel</a></li>
+            <li><a href="">Car Rental</a></li>
+        </ul>
+
+        <!-- search destination -->
+        <form action="/search" method="get">
+            <input type="search" id="search" name="q" placeholder="Search destination...   " class="hidden lg:block rounded-lg lg:relative right-28 top-6 bg-gray-300 opacity-85 pl-4 pr-20 py-2 md:hidden" >
+            <box-icon name='search-alt-2' class="hidden lg:block lg:relative left-[130px] bottom-[4px] text-white fill-current "></box-icon>
+        </form>
+
+        <div class="hidden lg:block lg:flex gap-4 mx-2">
+            <div class="lg: relative top-8">
+                <ul class="flex gap-10 ">
+                    <box-icon name='globe' class=" bg-white rounded-full lg:relative left-8 bottom-[6px] size-8" ></box-icon>
+                    <li class="">EN</li>
+                    <li>Login</li>
+                </ul>
+            </div>
+
+            <div>
+            <button class="bg-white text-black px-4 py-2 rounded-lg lg: relative top-6 mx-2">Sign Up</button>
+            </div>
+        </div>
+        </nav>
+         
+        <!-- horizone info -->
+         <div class="hidden lg:block flex lg:my-80 lg:mx-6">
+            <div>
+            <button class="bg-gray-300 opacity-85 rounded-3xl px-4 py-2 text-white">Destination</button>
+            <h2 class="text-2xl font-bold py-4">Exploring the Wonders of Hiking</h2>
+            <p class="text-xl">An iconic landmarks, this post unveils the secrets<br> that make this destination a traveler's paradise.</p>
+            </div>
+
+            <div class="flex ml-auto lg:relative md:relative left-16">
+                <div>
+                    <img src="images/person1.jpg" alt="" class="w-10 h-10 rounded-full lg: absolute top- left-[1170px] bottom-14">
+                </div>
+                <div class="absolute left-[1150px] bottom-8">
+                    <h3 class="text-xl py-2 px-16">Theodore Reginald</h3>
+                    <p class="text-xl">24 Jan 2024 . 10 mins read</p>
+                </div>
+            </div>
+         </div>   
+    </header>
+
+    <!-- Blog Section -->
+     <section>
+        <h1 class="text-2xl mx-6 mt-8">Blog</h1>
+        <p class="mx-6">Here, we share travel tips, destination guides, and stories that inspire your next adventure.</p>
+        
+        <div class="flex">
+            <div>
+                <ul class="flex gap-6 mx-8 mt-2">
+                    <li class="bg-gray-100 px-4 rounded-lg">All</li>
+                    <li>Destination</li>
+                    <li>Culinary</li>
+                    <li>Lifestyle</li>
+                    <li>Tips & Hacks</li>
+                </ul>
+            </div>
+
+            <div class="ml-auto mr-8">
+                <form action="">
+                    <label for="rarity">Sort by:</label>
+                    <select name="" id="">
+                        <option value="">Newest</option>
+                        <option value="">Oldest</option>
+                        <option value="">Middle</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+     </section>
+
+     <!-- grid secion -->
+      <section>
+        <div class="flex mx-6 mt-10 ">
+            <!-- 1 -->
+            <div class="pr-8 lg:relative md:relative">
+                <img src="images/kenny-eliason-C8HVCiuu8c0-unsplash.jpg" alt="" class="w-full h-52 object-cover rounded-2xl">
+                <button class="bg-gray-600 opacity-85 rounded-2xl px-4 py-2 text-white lg: absolute top-2 left-2 md:absolute">Destination</button>
+                <p class="py-4 text-gray-500">30 Jan 2024 . 10 mins read</p>
+                <h3 class="text-xl font-bold">Unveiling the Secrets Beyond the Tourist Trails</h3>
+                <p>Dive into the local culture, discover hidden spots, and experience the authentic charm that often...</p>
+                <div class="flex mt-4">
+                    <div>
+                        <img src="images/seraphina.jpg" alt="Seraphina jpg" class="w-10 h-10 rounded-full">
+                    </div>
+                    <div>
+                        <p class="pl-4 pt-2">Seraphina Isabella</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pr-8 lg:relative md:relative">
+                <img src="images/fashionista's.jpg" alt="" class="w-full h-52 object-cover rounded-2xl">
+                <button class="bg-gray-600 opacity-85 rounded-2xl px-4 py-2 text-white lg: absolute top-2 left-2 md:absolute">Lifestyle</button>
+                <p class="py-4 text-gray-500">29 Jan 2024 . 5 mins read</p>
+                <h3 class="text-xl font-bold">A Fashionista's Guide to Wanderlust</h3>
+                <p>Explore the intersection of fashion and travel as we delve into the wardrobes of globetrotters, Fr...</p>
+                <div class="flex mt-4">
+                    <div>
+                        <img src="images/maxmilian.jpg" alt="Maxmillian jpg" class="w-10 h-10 rounded-full">
+                    </div>
+                    <div>
+                        <p class="pl-4 pt-2">Maximilian Bartholomew</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:relative md:relative">
+                <img src="images/apps and gadgets.jpg" alt="" class="w-full h-52 object-cover rounded-2xl">
+                <button class="bg-gray-600 opacity-85 rounded-2xl px-4 py-2 text-white lg: absolute top-2 left-2 md:absolute">Tips & Hacks</button>
+                <p class="py-4 text-gray-500">26 Jan 2024 . 15 mins read</p>
+                <h3 class="text-xl font-bold">Top 5 Apps and Gadgets That Will Transform Your Journeys</h3>
+                <p>Explore the latest in travel technology with our guide to must-have apps and gadgets. From nav...</p>
+                <div class="flex mt-4">
+                    <div>
+                        <img src="images/anastasia.jpg" alt="Anastasia jpg" class="w-10 h-10 rounded-full">
+                    </div>
+                    <div>
+                        <p class="pl-4 pt-2">Anastasia Evangeline</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="flex mx-6 mt-10"> 
+            <div class="pr-8 lg: relative md:relative">
+                <img src="images/delights.jpg" alt="" class="w-full h-52 object-cover rounded-2xl">
+                <button class="bg-gray-600 opacity-85 rounded-2xl px-4 py-2 text-white lg: absolute top-2 left-2 md:absolute">Culinary</button>
+                <p class="py-4 text-gray-500">24 Jan 2024 . 10 mins read</p>
+                <h3 class="text-xl font-bold">Savoring Mozaic Resto Gastronomic Delights</h3>
+                <p>From street food  fine dining, uncover the diverse and delectable world of [Destination]'s...</p>
+                <div class="flex mt-4">
+                    <div>
+                        <img src="images/nathaniel.jpg" alt="Nathaniel jpg" class="w-10 h-10 rounded-full">
+                    </div>
+                    <div>
+                        <p class="pl-4 pt-2">Nathaniel Reginald</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pr-8 lg:relative md:relative">
+                <img src="images/journey through time.jpg" alt="" class="w-full h-52 object-cover rounded-2xl">
+                <button class="bg-gray-600 opacity-85 rounded-2xl px-4 py-2 text-white lg: absolute top-2 left-2 md:absolute">Destination</button>
+                <p class="py-4 text-gray-500">20 Jan 2024 . 8 mins read</p>
+                <h3 class="text-xl font-bold">Journey Through Time</h3>
+                <p>Wander through ancient streets, visit iconic landmarks, and immerse yourself in the tales th...</p>
+                <div class="flex mt-4">
+                    <div>
+                        <img src="images/percival.jpg" alt="Percival jpg" class="w-10 h-10 rounded-full">
+                    </div>
+                    <div>
+                        <p class="pl-4 pt-2">Percival Thaddeus</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:relative md:relative">
+                <img src="images/culinary tourism.jpg" alt="" class="w-full h-52 object-cover rounded-2xl">
+                <button class="bg-gray-600 opacity-85 rounded-2xl px-4 py-2 text-white lg: absolute top-2 left-2 md:absolute">Culinary</button>
+                <p class="py-4 text-gray-500">18 Jan 2024 . 6 mins read</p>
+                <h3 class="text-xl font-bold">Experiencing Sustainable Culinary Tourism </h3>
+                <p>Join us on a sustainable culinary voyage, exploring desinations that prioritize farm-to-tab...</p>
+                <div class="flex mt-4">
+                    <div>
+                        <img src="images/sebastian.jpg" alt="Sebastian jpg" class="w-10 h-10 rounded-full">
+                    </div>
+                    <div>
+                        <p class="pl-4 pt-2">Sebastian Montgomery</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="flex mx-6 mt-10 mb-8">
+            <div class="pr-8 lg:relative md:relative">
+                <img src="images/traveler lifestyle.jpg" alt="" class="w-full h-52 object-cover rounded-2xl">
+                <button class="bg-gray-600 opacity-85 rounded-2xl px-4 py-2 text-white lg: absolute top-2 left-2 md:absolute">Lifestyle</button>
+                <p class="py-4 text-gray-500">17 Jan 2024 . 5 mins read</p>
+                <h3 class="text-xl font-bold">Navigating the Traveler's Lifestyle</h3>
+                <p>Dive into the world of balancing a vibrant travel lifestyle - from managing work on the road to fi...</p>
+                <div class="flex mt-4">
+                    <div>
+                        <img src="images/arabella.jpg" alt="Arabella jpg" class="w-10 h-10 rounded-full">
+                    </div>
+                    <div>
+                        <p class="pl-4 pt-2">Arabella Serenity</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pr-8 lg:relative md: relative">
+                <img src="images/stress free travel.jpg" alt="" class="w-full h-52 object-cover rounded-2xl">
+                <button class="bg-gray-600 opacity-85 rounded-2xl px-4 py-2 text-white lg: absolute top-2 left-2 md:absolute">Tips & Hacks</button>
+                <p class="py-4 text-gray-500">12 Jan 2024 . 8 mins read</p>
+                <h3 class="text-xl font-bold">10 Essential Packing Hacks for Stress-Free Travel</h3>
+                <p>Uncover the secrets to efficient packing that will revolutionize your travel experience. From maxi...</p>
+                <div class="flex mt-4">
+                    <div>
+                        <img src="images/benjamin.jpg" alt="Benjamin jpg" class="w-10 h-10 rounded-full">
+                    </div>
+                    <div>
+                        <p class="pl-4 pt-2">Benjamin Augustus</p>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:relative md:relative">
+                <img src="images/adrenaline advemtures.jpg" alt="" class="w-full h-52 object-cover rounded-2xl">
+                <button class="bg-gray-600 opacity-85 rounded-2xl px-4 py-2 text-white lg: absolute top-2 left-2 md:absolute">Destination</button>
+                <p class="py-4 text-gray-500">10 Jan 2024 . 10 mins read</p>
+                <h3 class="text-xl font-bold">Adrenaline-Pumping Adventures</h3>
+                <p>Join us on an exploration of [Adventure Destination], where heart-pounding activities aw...</p>
+                <div class="flex mt-4">
+                    <div>
+                        <img src="images/calista.jpg" alt="Calista jpg" class="w-10 h-10 rounded-full">
+                    </div>
+                    <div>
+                        <p class="pl-4 pt-2">Calista Gwendolyn</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="my-5">
+            <ul class="flex mx-auto gap-6 items-center justify-center ">
+                <li class="text-2xl bg-gray-200 px-3 rounded-xl"> < </li>
+                <li class="text-2xl bg-gray-200 px-3 rounded-xl">1</li>
+                <li class="text-2xl">2</li>
+                <li class="text-2xl">3</li>
+                <li class="text-2xl">4</li>
+                <li class="text-2xl">5</li>
+                <li class="text-2xl"> > </li>
+            </ul>
+        </div>
+      </section>
+
+      <!-- Second grid section -->
+       <section>
+        <div class="grid grid-cols-2 gap-4 mx-4">
+            <div class="flex flex-col gap-4">
+                <div class="lg:relative md:relative">
+                    <img src="images/natureeee.jpg" class="w-full h-[212px] object-cover mb- rounded-xl">
+                    <div class="lg:absolute lg:top-[28px] left-8 md:absolute md:top-[0px]">
+                        <box-icon name='globe' class=" bg-gray-500 rounded-lg lg:absolute bottom-28 size-8 my-4 text-white fill-current" ></box-icon>
+                        <h1 class="text-2xl text-white font-bold">Explore more to get your comfort zone</h1>
+                        <p class="text-white">Book your perfect stay with us</p>
+                        <button class="bg-white px-4 py-2 rounded-lg my-4 md:relative md:bottom-3">Booking Now <box-icon name='right-arrow-alt' class="relative top-[7px] left-3 "></box-icon></button>
+                    </div>
+                </div>
+        
+                <div class="lg:relative md:relative">
+                    <img src="images/wolfgang-hasselmann-rDOduQ6-SFs-unsplash.jpg" class="w-full h-[16.7rem] object-cover rounded-xl">
+                    <div class="absolute bottom-[50px] left-8">
+                        <h3 class="text-white font-bold">Article Available</h3>
+                        <h1 class="text-white text-5xl">78</h1>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="lg:relative md:relative">
+                <img src="images/kenny-eliason-C8HVCiuu8c0-unsplash.jpg" class="w-full h-[31rem] rounded-xl">
+                <div class="absolute top-[230px] left-36 text-center md:ansolute md:left-9"> 
+                    <h1 class="text-white text-3xl font-bold">Beyond accommodation, creating<br> memories of a lifetime</h1>
+                </div>
+            </div>
+        </div>
+        
+       </section>
+
+       <!-- footer section -->
+        <section class="bg-black mt-4 mx-4 rounded-lg">
+            <div class="flex gap-6">
+                <div class="pr-52">
+                    <img src="images/horizone logoooo.png" alt="" class="lg:h-20 w-50">
+                    <p class="text-white ml-4">Our misson is to equip mordern explorers<br> with cutting-edge, functional, and stylish<br> bags that elevate every adventure.</p>
+                </div>
+
+                <div>
+                    <ul class="pr-52 pt-8 ">
+                        <li class="text-white pb-6 font-bold">About</li>
+                        <li class="text-white pb-6">About Us</li>
+                        <li class="text-white pb-6">Blog</li>
+                        <li class="text-white">Career</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul class="pr-52 pt-8">
+                        <li class="text-white pb-6 font-bold">Support</li>
+                        <li class="text-white pb-6">Contact Us</li>
+                        <li class="text-white pb-6">Return</li>
+                        <li class="text-white">FAQ</li>
+                    </ul>
+                </div>
+
+                <div class="pt-8 lg:relative md:relative">
+                    <p class="text-white pb-2 mb-14">Get Updates</p>
+                    <form action="" class="lg:absolute lg:bottom-[400px] left-[480px]">
+                        <input type="email" name="email" id="email" placeholder="Enter your email" class="bg-gray-500  opacity-85 py-4 pl-4 rounded-lg pr-20 mb-2 md:absolute md:right-[200px] md:top-64 ">
+                        <button class="bg-white px-5 py-2 rounded-lg absolute right-2 top-[70px] md:absolute md:right-[205px] md:top-[260px]">Subscribe</button>
+                    </form>
+
+                    <div class=" lg:block flex">
+                        <box-icon type='logo' name='instagram' class="text-white fill-current mr-9 bg-gray-500 rounded-full size-7"></box-icon>
+                         <box-icon type='logo' name='twitter' class="text-white fill-current mr-8 bg-gray-500 rounded-full size-7"></box-icon>
+                          <box-icon type='logo' name='facebook-circle' class="text-white fill-current mr-8 bg-gray-500 rounded-full size-7"></box-icon>
+                           <box-icon type='logo' name='discord-alt' class="text-white fill-current mr-7 bg-gray-500 rounded-full size-7"></box-icon>
+                            <box-icon type='logo' name='tiktok' class="text-white fill-current bg-gray-500 rounded-full size-7"></box-icon>
+                    </div>
+                </div>
+            </div>
+
+               <!-- footer section -->
+            <footer class="mt-8 flex gap-6 pb-4 mx-4 mb-2">
+                <div>
+                <h1 class="text-md text-white">&copy; 2024 Horizone. All rights reserved</h1>
+                </div>
+                
+                <div>
+                    <ul class="flex gap-8 lg:relative left-[570px] ml-96">
+                        <li class="text-white">Privacy Policy</li>
+                        <li class="text-white">Terms of Service</li>
+                    </ul>
+
+                    <button id="back-to-top" class="fixed bottom-10 right-10 px-4 py-2 bg-white rounded hidden">↑</button>
+                </div>
+
+            </footer>
+        </section>
+
+     
+       
+
+<script src="script.js"></script>
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+</html>
